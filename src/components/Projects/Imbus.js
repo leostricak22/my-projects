@@ -43,7 +43,7 @@ export default function Imbus() {
 
             <h2>Team</h2>
             <ul>
-            <li>Leo Stričak (developer)</li>
+                <li>Leo Stričak (developer)</li>
                 <li>Zvonimir Škegro (design)</li>
                 <li>Oliver Živčić (developer & business plan)</li>
             </ul>
