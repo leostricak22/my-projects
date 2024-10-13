@@ -1,9 +1,9 @@
 import {FaDatabase, FaNode, FaReact} from "react-icons/fa";
 import {SiExpress} from "react-icons/si";
 
-const MainScreen = require("../../assets/SnakeGame/MainScreen.png")
-const Game = require("../../assets/SnakeGame/Game.png")
-const Score = require("../../assets/SnakeGame/Score.png")
+const MainScreen = require("../../assets/images/SnakeGame/MainScreen.png")
+const Game = require("../../assets/images/SnakeGame/Game.png")
+const Score = require("../../assets/images/SnakeGame/Score.png")
 
 export default function SnakeGame() {
     return (
