@@ -174,7 +174,33 @@ export const projectsData = [
         screencast: "https://www.youtube.com/embed/fRz-gd85QJg?si=0f1YgWXlvPgXzMMK",
         finished: true
     },
-    { name: "EcoMedia", finished: false },
+    {
+        name: "EcoMedia",
+        documentation: "https://drive.google.com/file/d/1DQAalb6-lTFFTOy15tOTsue9ztYA906-/view?usp=sharing",
+        description: [
+            "EcoMedia is a mobile app that allows users to log in, take a photo with their mobile device showing themselves or someone else contributing to environmental preservation (e.g., throwing trash in a bin, sorting waste...), upload the image, and wait for a rating from the administrator. Ratings are given using stars (from 1 to 5). A leaderboard displays which user has the most points. Through this app, users can actively track their contribution to environmental preservation by the points they accumulate."
+        ],
+        technologiesUsed: {
+            list: [
+                "Java",
+                "MySQL",
+                "PHP",
+                "Android Studio"
+            ]
+        },
+        gallery: {
+            images: [
+                { src: require("./assets/images/projects/EcoMedia/login.png"), description: "Login page." },
+                { src: require("./assets/images/projects/EcoMedia/leaderboard.png"), description: "Leaderboard, points of every user." },
+                { src: require("./assets/images/projects/EcoMedia/camera.png"), description: "Camera." },
+                { src: require("./assets/images/projects/EcoMedia/viewTakenPhoto.png"), description: "View taken photo." },
+                { src: require("./assets/images/projects/EcoMedia/viewWithEveryImageRating.png"), description: "Images screen before admin rates it, and after." },
+                { src: require("./assets/images/projects/EcoMedia/adminList.png"), description: "Admin list for images to rate." },
+                { src: require("./assets/images/projects/EcoMedia/adminRate.png"), description: "Admins feature to rate the image." },
+            ]
+        },
+        finished: true
+    },
     {
         name: "MagicSquare",
         url: "https://magicnikvadrat.barbuddy.net/",
