@@ -44,10 +44,13 @@ export default function ProjectInfo({project}) {
             <Screencast screencastUrl={project.screencast} />
             <Team team={project.team}/>
 
-            <>
-                <h2>Awards</h2>
-                {project.awards && <Description description={project.awards} />}
-            </>
+            {
+                project.awards &&
+                <>
+                    <h2>Awards</h2>
+                    <Description description={project.awards} />
+                </>
+            }
         </div>
     );
 }

@@ -278,6 +278,39 @@ export const projectsData = [
         awards: "2. place on Croatian Makers competition - Internet of Things: Kućni ljubimci i domaće životinje",
         finished: true
     },
-    { name: "Smart Street", finished: false },
+    {
+        name: "Smart Street",
+        description: [
+            "Smart Street is an IoT project for the “Smart City” competition. This system is designed for the citizens of a city to keep them well-informed about conditions and events occurring in the city. Our envisioned street is located next to a river and near the main city bridge. In many cases, there is a need for citizens to be quickly and timely informed about everything happening in their city (power outages, threatening weather conditions, etc.). This is especially important in the event of any extraordinary occurrence that requires all residents to be informed rapidly. We have created a system in which, from a mobile device through the Blynk application, the city administrator (the person responsible for informing residents in the city administration) can manage the display and input messages or notifications for the citizens.",
+            "In our “smart street,” the monitor displays data on temperature, humidity, and the exact time (hours, minutes, and seconds).",
+            "We read the humidity and temperature from the DHT22 sensor. The RGB LED lights up depending on the temperature (for example, when the outdoor temperature is below 10 degrees Celsius, the LED lights up blue). Our envisioned street is located next to a movable bridge, and the concept of a “smart city” is also applied in traffic regulation. We have created a movable bridge that rises and lowers depending on the river traffic. When a boat approaches close enough to the bridge, it begins to rise. Once the boat is a sufficient distance away from the bridge, it starts to lower, allowing road traffic to continue. We measure the distance of the boat from the bridge using an ultrasonic sensor, and the movement of the bridge is controlled by a servo motor.",
+            "The main components of the project, along with the Arduino MKR1000 microcontroller, include an ultrasonic sensor, a humidity and temperature sensor, an RGB LED module, an LCD display, and a servo motor. The most challenging part of the project was displaying notifications sent by the user through the Blynk application on the LCD display. The prototype was created using a 3D printer.",
+            "We developed the mobile application in Blynk. The application consists of six widgets. Two widgets are \"gauges\" that graphically display the temperature and humidity. One widget is used for entering text (notifications). Two widgets allow users to select between displaying the time, temperature, and humidity or text (notifications), and one widget shows whether the bridge is rising, lowering, or is closed.",
+        ],
+        technologiesUsed: {
+            list: [
+                "Arduino",
+                "C++",
+                "Blynk"
+            ]
+        },
+        team: [
+            "Leo Stričak (developer)",
+            "Andrija Palašek (documetation)"
+        ],
+        gallery: {
+            images: [
+                { src: require("./assets/images/projects/SmartStreet/SmartStreet-1.jpg"), description: "Smart street" },
+                { src: require("./assets/images/projects/SmartStreet/SmartStreetCreation-1.png"), description: "Developing the project." },
+                { src: require("./assets/images/projects/SmartStreet/SmartStreetCreation-2.png"), description: "Developing the project." },
+                { src: require("./assets/images/projects/SmartStreet/SmartStreetCreation-3.png"), description: "Creating the model." },
+                { src: require("./assets/images/projects/SmartStreet/SmartStreetCreation-4.png"), description: "Testing the Blynk app." },
+                { src: require("./assets/images/projects/SmartStreet/SmartStreetShema.png"), description: "Arduino scheme." },
+            ]
+        },
+        screencast: "https://www.youtube.com/embed/-gM6au11Anc?si=NIyYVnWFwl8IKfoi",
+        awards: "1. place on the Croatian Makers competition - Internet of Things: Pametan grad",
+        finished: true
+    },
     { name: "SimonSays", finished: false },
 ];
