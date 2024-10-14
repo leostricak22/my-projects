@@ -100,8 +100,80 @@ export const projectsData = [
         },
         finished: true
     },
-    { name: "Formulas", finished: false },
-    { name: "MicroMania", finished: false },
+    {
+        name: "Formulas",
+        url: "https://formulas.barbuddy.net/",
+        urlAvailable: true,
+        logo: require("./assets/images/projects/Formulas/logo.png"),
+        description: [
+            "Formulas is a web application designed to assist with solving physics and mathematics problems. The application is divided into three categories: \"My Formulas,\" \"Calculator,\" and \"My Tasks.\"",
+            "The first visible page is the login page. If the user does not have an account, they can register. After logging in, the user is redirected to the main menu.",
+            "In the \"My Formulas\" category, users can add, modify, or delete their formulas. The tab contains tables sorted by groups in which the formulas are stored. Below the tables is a form for adding formulas. Formulas are added to the database based on the following information: formula, formula description, and the group in which the formulas are categorized. Formulas can be saved in .pdf format by groups or all formulas at once.",
+            "In the \"Calculator\" category, this calculator is not similar to other \"regular\" calculators; it is designed based on user-defined formulas. In the calculator, the user enters values, selects the group of formulas they want to use, and specifies the unknowns that need to be calculated. The number of values is defined using the \"+\" and \"-\" buttons below the calculator form. When the \"Calculate\" button is pressed, the user receives the solution to the problem on the screen along with the procedure. If desired, they can save it to their tasks. The calculator is organized to correspond to the user's formulas; an algorithm has been created to search through all the formulas, structured so that if a solution cannot be obtained with the entered formulas, the algorithm will try to incorporate other formulas into each formula. If a solution does not exist, a message will be displayed indicating that the solution could not be obtained, and it cannot be saved as a task. Tasks are saved by having the user enter the task title and problem description and then press the \"Save Task\" button.",
+            "In the \"My Tasks\" category, there is a table displaying the task name, problem description, and options for opening, modifying, or deleting the task. When a task is opened, all data related to that task is displayed, along with an additional option to save the task in .pdf format.\n",
+        ],
+        documentation: "https://drive.google.com/file/d/148fW7FEbID4asd1kTdxPqdOoTCT1acwX/view?usp=sharing",
+        technologiesUsed: {
+            list: [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Node.js",
+                "Express.js",
+                "MySQL"
+            ]
+        },
+        gallery: {
+            images: [
+                { src: require("./assets/images/projects/Formulas/formulasLogin.png"), description: "Login page." },
+                { src: require("./assets/images/projects/Formulas/formulasHomepage.png"), description: "Home page." },
+                { src: require("./assets/images/projects/Formulas/formulasFormulas.png"), description: "Formulas and constants page." },
+                { src: require("./assets/images/projects/Formulas/formulasCalc.png"), description: "Calculator." },
+                { src: require("./assets/images/projects/Formulas/formulasCalcSolve.png"), description: "The solution." },
+                { src: require("./assets/images/projects/Formulas/formulasTasks.png"), description: "All tasks." },
+                { src: require("./assets/images/projects/Formulas/formulasTask.png"), description: "Specific task." },
+            ]
+        },
+        screencast: "https://www.youtube.com/embed/o2CqNJ4mSdk?si=twf5AN7ohht58w3a",
+        finished: true
+    },
+    {
+        name: "MicroMania",
+        logo: require("./assets/images/projects/MicroMania/MicroManiaLogo.png"),
+        documentation: "https://drive.google.com/file/d/1b6smmZvWEEDNlu1IhSP2q9KYZCxWk-ob/view?usp=sharing",
+        description: [
+            "Micromania is an online tool used for creating, editing, and playing quizzes using Microbits. To access the tool, users are required to register, with their data being stored in a database. After registration, logging in is necessary to enter the site.",
+            "The quiz, or the quiz questions, are created using the web tool, and for students to answer the quiz questions, there must be as many Microbits as there are players in the quiz, along with one main Microbit that is used to receive their answers.",
+            "Each player (student) has their own Microbit, and they use it to answer questions displayed on a computer. At the end of the quiz, a results table is shown where students can see their scores."
+        ],
+        technologiesUsed: {
+            list: [
+                "HTML",
+                "CSS",
+                "SQLite",
+                "Flask",
+                "Python"
+            ]
+        },
+        gallery: {
+            images: [
+                { src: require("./assets/images/projects/MicroMania/homepage.png"), description: "Homepage of MicroMania." },
+                { src: require("./assets/images/projects/MicroMania/microbitPrograms.png"), description: "Programs to download for Microbits." },
+                { src: require("./assets/images/projects/MicroMania/Quizz.png"), description: "Quiz creation." },
+                { src: require("./assets/images/projects/MicroMania/QuizzInfo.png"), description: "Quiz information." },
+                { src: require("./assets/images/projects/MicroMania/StartOfQuizz.png"), description: "Start of the quiz." },
+                { src: require("./assets/images/projects/MicroMania/Question.png"), description: "Question example." },
+                { src: require("./assets/images/projects/MicroMania/microbit.png"), description: "Selecting the answers with Microbits." },
+                { src: require("./assets/images/projects/MicroMania/Results.png"), description: "Quiz results." },
+            ]
+        },
+        team: [
+            "Leo Stričak (developer)",
+            "Andrija Palašek (documentation)"
+        ],
+        screencast: "https://www.youtube.com/embed/fRz-gd85QJg?si=0f1YgWXlvPgXzMMK",
+        finished: true
+    },
     { name: "EcoMedia", finished: false },
     {
         name: "MagicSquare",
@@ -248,7 +320,7 @@ export const projectsData = [
     {
         name: "Smart Dog House",
         description: [
-            "Project created for a Croatian Makers competition - Internet of Things: Kućni ljubimci i domaće životinje in 2018.",
+            "Project created for a Croatian Makers competition - Internet of Things: Kućni ljubimci i domaće životinje",
             "Each of us loves our pet. According to research, 41% of the citizens of the Republic of Croatia have a dog as a pet. The smart dog house is designed so that pet owners can constantly monitor the conditions their pet has in the dog house. The model of the dog house we created uses an ultrasonic sensor that sends information to a mobile app about the pet's presence in the house. This way, the owner can know if their dog is in the house and whether it is protected from unfavorable weather conditions.",
             "Taking care of your pet is not just about whether they are in their house, but also about whether the conditions inside are suitable for them. Therefore, we installed a temperature and humidity sensor in the house, and this information is sent to a mobile app.",
             "If we are away from home, it is no longer necessary to ask someone to feed our pet. We have installed an automatic feeder in the dog house, which, by pressing a button on the mobile app, activates a motor that opens the feeder's door and releases the food. The same process is used to close the feeder. A stepper motor was used for this.",
@@ -275,7 +347,7 @@ export const projectsData = [
             ]
         },
         screencast: "https://www.youtube.com/embed/AOIWomsvg_o?si=KeLxgOZffkpF-VJk",
-        awards: "2. place on Croatian Makers competition - Internet of Things: Kućni ljubimci i domaće životinje",
+        awards: "2. place on Croatian Makers competition - Internet of Things: Kućni ljubimci i domaće životinje (2018.)",
         finished: true
     },
     {
@@ -309,7 +381,7 @@ export const projectsData = [
             ]
         },
         screencast: "https://www.youtube.com/embed/-gM6au11Anc?si=NIyYVnWFwl8IKfoi",
-        awards: "1. place on the Croatian Makers competition - Internet of Things: Pametan grad",
+        awards: "1. place on the Croatian Makers competition - Internet of Things: Pametan grad (2019.)",
         finished: true
     },
     { name: "SimonSays", finished: false },

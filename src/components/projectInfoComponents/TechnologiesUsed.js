@@ -2,14 +2,14 @@ import {
     SiArduino,
     SiChartdotjs, SiCplusplus,
     SiExpo,
-    SiExpress,
+    SiExpress, SiFlask,
     SiFlyway,
     SiJavascript,
-    SiMatterdotjs,
+    SiMatterdotjs, SiMysql,
     SiOpenlayers,
     SiSpringboot
 } from "react-icons/si";
-import {FaCss3, FaDatabase, FaDocker, FaHtml5, FaNodeJs, FaPhp, FaReact} from "react-icons/fa";
+import {FaCss3, FaDatabase, FaDocker, FaFlask, FaHtml5, FaNodeJs, FaPhp, FaPython, FaReact} from "react-icons/fa";
 
 export default function TechnologiesUsed({technologies}) {
     function technologiesUsedIcon(item) {
@@ -50,6 +50,12 @@ export default function TechnologiesUsed({technologies}) {
                 return <SiArduino />
             case "C++":
                 return <SiCplusplus />
+            case "Python":
+                return <FaPython />
+            case "SQLite":
+                return <FaDatabase />
+            case "Flask":
+                return <SiFlask/>
             case "Blynk":
                 return <img src={require("../../assets/images/icons/blynk.png")} alt="Blynk" className="tech-icon" />
             default:
