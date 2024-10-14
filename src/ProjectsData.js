@@ -332,8 +332,51 @@ export const projectsData = [
         },
         finished: true
     },
-    { name: "Visitor", finished: false },
-    { name: "WebShop", finished: false },
+    {
+        name: "Visitor",
+        url: "https://visitor.barbuddy.net",
+        urlAvailable: true,
+        description: [
+            "App build in React.js that helps you create your personal collection of places in Croatia that you would like to visit.",
+            "Add places that you would like to visit by clicking on available places.",
+            "Remove places from your list by clicking on the place in your list.",
+            "Available places are sorted by your location."
+        ],
+        technologiesUsed: {
+            list: [
+                "JavaScript",
+                "React.js"
+            ]
+        },
+        gallery: {
+            images: [
+                { src: require("./assets/images/projects/Visitor/visitor.png"), description: "Visitor." },
+            ]
+        },
+        finished: true
+    },
+    {
+        name: "WebShop",
+        url: "https://webshop.barbuddy.net",
+        urlAvailable: true,
+        description: [
+            "WebShop is a simple web application that allows users to add products to the cart and see the total price of the products.",
+            "The user can add products to the cart by clicking on the button under the product image and more quantity, or remove it in the cart.",
+            "The total price is calculated automatically."
+        ],
+        technologiesUsed: {
+            list: [
+                "JavaScript",
+                "React.js"
+            ]
+        },
+        gallery: {
+            images: [
+                { src: require("./assets/images/projects/WebShop/webshop.png"), description: "WebShop." },
+            ]
+        },
+        finished: true
+    },
     { name: "TimeItRight", finished: false },
     { name: "RoomManagement", finished: false },
     { name: "MeetingApp", finished: false },
