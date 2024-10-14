@@ -17,7 +17,6 @@ export default function ProjectInfo({project}) {
 
     return (
         <div className="content">
-
             <div className="projectName">
                 <h1>{project.name}</h1>
                 {
@@ -25,6 +24,9 @@ export default function ProjectInfo({project}) {
                 }
             </div>
 
+            {
+                project.inDevelopment && <p className="in-development">New version of this project is coming out soon.</p>
+            }
 
             {
             project.url && <p>You can find the app <a href={project.url}>here</a>.{!project.urlAvailable && <span className="unavailable">&nbsp;(currently unavailable)</span>}</p>

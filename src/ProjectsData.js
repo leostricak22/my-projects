@@ -64,6 +64,7 @@ export const projectsData = [
         logo: require("./assets/images/projects/BarBuddy/BarBuddyLogo.png"),
         url: "https://barbuddy.net/",
         urlAvailable: true,
+        inDevelopment: true,
         description: [
             "BarBuddy is a web application designed to make ordering easier in hospitality venues.",
             "With this application, a customer in any venue that supports the BarBuddy app can order anything from the menu via their mobile phone. All they need to do is scan the QR code on their table and select their order. This way, they can order without waiting for a waiter and receive their order without long delays. While ordering, the customer can see the price of each item displayed in euros. Ordering is initiated by scanning the QR code using their mobile device's camera, and no additional app is required on the customer's end. The waiter has our app, through which they can see the placed order.",
