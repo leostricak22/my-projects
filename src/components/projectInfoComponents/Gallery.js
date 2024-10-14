@@ -13,7 +13,9 @@ export default function Gallery({gallery}) {
                     {
                         gallery.images &&
                         <div className="galleryImage">
-                            <img src={gallery.images[imageIndex].src} alt={gallery.images[imageIndex].description}/>
+                            <div className="galleryImageContainer">
+                                <img src={gallery.images[imageIndex].src} alt={gallery.images[imageIndex].description}/>
+                            </div>
                             <div
                                 className="image-description">Image {imageIndex + 1}/{gallery.images.length} - {gallery.images[imageIndex].description}</div>
                         </div>

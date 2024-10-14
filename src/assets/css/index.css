@@ -154,3 +154,15 @@ iframe {
   color: #888;
 }
 
+.projectName {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+.project-logo {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+}

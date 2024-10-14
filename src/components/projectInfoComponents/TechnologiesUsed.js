@@ -1,5 +1,5 @@
-import {SiExpo, SiExpress, SiFlyway, SiSpringboot} from "react-icons/si";
-import {FaDatabase, FaDocker, FaNodeJs, FaReact} from "react-icons/fa";
+import {SiChartdotjs, SiExpo, SiExpress, SiFlyway, SiJavascript, SiOpenlayers, SiSpringboot} from "react-icons/si";
+import {FaCss3, FaDatabase, FaDocker, FaHtml5, FaNodeJs, FaReact} from "react-icons/fa";
 
 export default function TechnologiesUsed({technologies}) {
     function technologiesUsedIcon(item) {
@@ -22,6 +22,16 @@ export default function TechnologiesUsed({technologies}) {
                 return <FaNodeJs />
             case "Express.js":
                 return <SiExpress />
+            case "OpenLayers":
+                return <SiOpenlayers />
+            case "HTML":
+                return <FaHtml5 />
+            case "CSS":
+                return <FaCss3 />
+            case "JavaScript":
+                return <SiJavascript />
+            case "Chart.js":
+                return <SiChartdotjs />
             default:
                 return null;
         }

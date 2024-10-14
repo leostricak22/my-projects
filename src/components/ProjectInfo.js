@@ -3,6 +3,7 @@ import FunctionalitiesAndFeatures from "./projectInfoComponents/FunctionalitiesA
 import Screencast from "./projectInfoComponents/Screencast";
 import Team from "./projectInfoComponents/Team";
 import Gallery from "./projectInfoComponents/Gallery";
+import Description from "./projectInfoComponents/Description";
 
 export default function ProjectInfo({project}) {
     if (!project.finished) {
@@ -16,11 +17,24 @@ export default function ProjectInfo({project}) {
 
     return (
         <div className="content">
-            <h1>{project.name}</h1>
-            <p>
-                You can find the app <a href={project.url}>here</a>{!project.urlAvailable && <span className="unavailable">&nbsp;(currently unavailable)</span>}
-            </p>
-            { project.description && <p className="project-info">{project.description}</p> }
+
+            <div className="projectName">
+                <h1>{project.name}</h1>
+                {
+                    <img src={project.logo ? project.logo : "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="} alt={project.name} className="project-logo"/>
+                }
+            </div>
+
+
+            {
+            project.url && <p>You can find the app <a href={project.url}>here</a>.{!project.urlAvailable && <span className="unavailable">&nbsp;(currently unavailable)</span>}</p>
+            }
+
+            <Description description={project.description} />
+
+            {
+                project.documentation && <p>Project documentation is <a href={project.documentation}>here</a>.</p>
+            }
 
             <FunctionalitiesAndFeatures functionalitiesAndFeatures={project.functionalitiesAndFeatures} />
             <TechnologiesUsed technologies={project.technologiesUsed}/>
