@@ -1,6 +1,6 @@
 import Menu from "./components/Menu";
 import {useState} from "react";
-import ProjectInfo from "./components/ProjectInfo";
+import ProjectInfo from "./components/ProjectComponent";
 
 function App() {
     const [selectedProject, setSelectedProject] = useState(null);

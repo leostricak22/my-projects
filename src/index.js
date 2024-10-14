@@ -4,6 +4,7 @@ import App from './App';
 
 import './assets/css/index.css';
 import './assets/css/scrollbars.css';
+import './assets/css/gallery.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

@@ -147,20 +147,6 @@ iframe {
   margin-right: 10px;
 }
 
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 20px;
-}
-
-.gallery img {
-  margin: 10px;
-  border-radius: 10px;
-  width: 80%;
-  max-width: 1000px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
 .unavailable {
   color: #888;
 }
