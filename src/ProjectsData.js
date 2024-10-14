@@ -103,12 +103,137 @@ export const projectsData = [
     { name: "Formulas", finished: false },
     { name: "MicroMania", finished: false },
     { name: "EcoMedia", finished: false },
-    { name: "MagicSquare", finished: false },
-    { name: "Plinko", finished: false },
-    { name: "ParkingGame", finished: false },
-    { name: "LeoCode", finished: false },
-    { name: "SQLi", finished: false },
-    { name: "Resume", finished: false },
+    {
+        name: "MagicSquare",
+        url: "https://magicnikvadrat.barbuddy.net/",
+        urlAvailable: true,
+        description: [
+            "A project made for mathematics class, explaining the magic square.",
+            "In the main menu you can choose between three options: to create your own magic square, to see the algorithms and the procedure of creating a magic square and to see some examples of already made squares.",
+        ],
+        technologiesUsed: {
+            list: [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Node.js"
+            ]
+        },
+        gallery: {
+            images: [
+                { src: require("./assets/images/projects/MagicSquare/msmainmenu.png"), description: "Main menu" },
+                { src: require("./assets/images/projects/MagicSquare/mscreateyourown.png"), description: "Create your own magic square" },
+                { src: require("./assets/images/projects/MagicSquare/msalgorithms.png"), description: "Algorithm explanation" },
+                { src: require("./assets/images/projects/MagicSquare/examples.png"), description: "Example of a magic square" },
+            ]
+        },
+
+        finished: true
+    },
+    {
+        name: "Plinko",
+        url: "https://plinko.barbuddy.net/",
+        urlAvailable: true,
+        description: [
+            "A project for mathematics class, explaining Gaussian curve. There is also a Plinko game, accessible from the bottom of the page.",
+            "Plinko is a game where the player drops a ball into a peg board, where it will bounce around and land in a slot at the bottom.",
+            "You have your budget in the top left corner of the screen, every ball drop costs as many euros as the number you set in the top right corner of the screen. The goal is to get as many balls as possible into the highest slot, which is worth the most money and the game ends when you run out of money."
+        ],
+        technologiesUsed: {
+            list: [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Matter.js"
+            ]
+        },
+        gallery: {
+            images: [
+                { src: require("./assets/images/projects/Plinko/gauss.png"), description: "Gauss curve" },
+                { src: require("./assets/images/projects/Plinko/plinko.png"), description: "Plinko game" },
+            ]
+        },
+
+        finished: true
+    },
+    {
+        name: "ParkingGame",
+        url: "https://leostricak22.github.io/ParkingGame/",
+        urlAvailable: true,
+        description: "A simple parking game made in JavaScript to learn how the steering wheel works for better parking.",
+        technologiesUsed: {
+            list: [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ]
+        },
+        gallery: {
+            images: [
+                { src: require("./assets/images/projects/ParkingGame/parkinggame.png"), description: "Parking game" },
+            ]
+        },
+        finished: true
+    },
+    {
+        name: "LeoCode",
+        url: "https://decoder.barbuddy.net/",
+        urlAvailable: true,
+        description: "A custom encryptor and decryptor made in JavaScript.",
+        technologiesUsed: {
+            list: [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Node.js"
+            ]
+        },
+        gallery: {
+            images: [
+                { src: require("./assets/images/projects/LeoCode/leocode.png"), description: "LeoCode" },
+            ]
+        },
+        finished: true
+    },
+    {
+        name: "SQLi",
+        url: "https://sqli.barbuddy.net/",
+        urlAvailable: true,
+        description: ["A SQL injection example form.", "Made for simpler view of the SQL payload in the login forms.", "Used only for CTF challenges and educational purposes, the published version doesn't interact with any database."],
+        technologiesUsed: {
+            list: [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "PHP",
+                "MySQL"
+            ]
+        },
+        gallery: {
+            images: [
+                { src: require("./assets/images/projects/SQLi/sqli.png"), description: "SQLi" },
+            ]
+        },
+        finished: true
+    },
+    {
+        name: "Resume",
+        url: "https://resume.barbuddy.net/",
+        urlAvailable: true,
+        description: "My personal resume page.",
+        technologiesUsed: {
+            list: [
+                "HTML",
+                "CSS",
+            ]
+        },
+        gallery: {
+            images: [
+                { src: require("./assets/images/projects/Resume/resume.png"), description: "Resume" },
+            ]
+        },
+        finished: true
+    },
     { name: "Visitor", finished: false },
     { name: "WebShop", finished: false },
     { name: "TimeItRight", finished: false },

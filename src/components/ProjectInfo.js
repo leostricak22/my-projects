@@ -29,7 +29,7 @@ export default function ProjectInfo({project}) {
             }
 
             {
-            project.url && <p>You can find the app <a href={project.url}>here</a>.{!project.urlAvailable && <span className="unavailable">&nbsp;(currently unavailable)</span>}</p>
+                project.url && <p>You can find the app <a href={project.url}>here</a>.{!project.urlAvailable && <span className="unavailable">&nbsp;(currently unavailable)</span>}</p>
             }
 
             <Description description={project.description} />
