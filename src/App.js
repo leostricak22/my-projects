@@ -7,7 +7,7 @@ function App() {
 
     return (
         <div id="main">
-          <Menu setSelectedProject={setSelectedProject}/>
+          <Menu selectedProject={selectedProject} setSelectedProject={setSelectedProject}/>
           <ProjectInfo selectedProject={selectedProject}/>
         </div>
     );

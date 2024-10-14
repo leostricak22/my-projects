@@ -1,11 +1,11 @@
 import {projectsData} from "../ProjectsData";
 
-export default function Menu({ setSelectedProject }) {
+export default function Menu({ selectedProject, setSelectedProject }) {
     return (
         <div id="menu">
             <ul>
                 {projectsData.map((project) => (
-                    <li key={project.name} onClick={() => setSelectedProject(project.name)}>
+                    <li key={project.name} onClick={() => setSelectedProject(project.name)} className={selectedProject === project.name && "selected-project"}>
                         {project.name}
                     </li>
                 ))}

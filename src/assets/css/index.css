@@ -130,7 +130,10 @@ iframe {
   text-align: center;
   font-size: 1.5rem;
   color: #888;
-  background-color: #f0f0f0;
+}
+
+.selected-project {
+  background-color: #1a252f;
 }
 
 .tech-items {
