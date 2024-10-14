@@ -170,3 +170,13 @@ iframe {
 .in-development {
   font-weight: bold;
 }
+
+.tech-icon {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  margin-right: 10px;
+  filter: grayscale(100%);
+
+
+}

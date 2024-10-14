@@ -1,5 +1,6 @@
 import {
-    SiChartdotjs,
+    SiArduino,
+    SiChartdotjs, SiCplusplus,
     SiExpo,
     SiExpress,
     SiFlyway,
@@ -45,6 +46,12 @@ export default function TechnologiesUsed({technologies}) {
                 return <SiMatterdotjs />
             case "PHP":
                 return <FaPhp />
+            case "Arduino":
+                return <SiArduino />
+            case "C++":
+                return <SiCplusplus />
+            case "Blynk":
+                return <img src={require("../../assets/images/icons/blynk.png")} alt="Blynk" className="tech-icon" />
             default:
                 return null;
         }

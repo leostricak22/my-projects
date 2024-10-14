@@ -43,6 +43,11 @@ export default function ProjectInfo({project}) {
             <Gallery gallery={project.gallery} />
             <Screencast screencastUrl={project.screencast} />
             <Team team={project.team}/>
+
+            <>
+                <h2>Awards</h2>
+                {project.awards && <Description description={project.awards} />}
+            </>
         </div>
     );
 }

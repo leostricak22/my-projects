@@ -245,7 +245,39 @@ export const projectsData = [
     { name: "Chat", finished: false },
     { name: "TicTacToe Online", finished: false },
     { name: "TicTacToe React", finished: false },
-    { name: "Smart Dog House", finished: false },
+    {
+        name: "Smart Dog House",
+        description: [
+            "Project created for a Croatian Makers competition - Internet of Things: Kućni ljubimci i domaće životinje in 2018.",
+            "Each of us loves our pet. According to research, 41% of the citizens of the Republic of Croatia have a dog as a pet. The smart dog house is designed so that pet owners can constantly monitor the conditions their pet has in the dog house. The model of the dog house we created uses an ultrasonic sensor that sends information to a mobile app about the pet's presence in the house. This way, the owner can know if their dog is in the house and whether it is protected from unfavorable weather conditions.",
+            "Taking care of your pet is not just about whether they are in their house, but also about whether the conditions inside are suitable for them. Therefore, we installed a temperature and humidity sensor in the house, and this information is sent to a mobile app.",
+            "If we are away from home, it is no longer necessary to ask someone to feed our pet. We have installed an automatic feeder in the dog house, which, by pressing a button on the mobile app, activates a motor that opens the feeder's door and releases the food. The same process is used to close the feeder. A stepper motor was used for this.",
+            "Mobile application was created in Blynk, and the model of the dog house was created using Arduino."
+        ],
+        technologiesUsed: {
+            list: [
+                "Arduino",
+                "C++",
+                "Blynk"
+            ]
+        },
+        team: [
+            "Leo Stričak (developer, model maker)",
+            "Andrija Palašek (documetation, model maker)"
+        ],
+        gallery: {
+            images: [
+                { src: require("./assets/images/projects/SmartDogHouse/house.jpg"), description: "Smart dog house" },
+                { src: require("./assets/images/projects/SmartDogHouse/creationOfTheProject.jpg"), description: "Creation of the model" },
+                { src: require("./assets/images/projects/SmartDogHouse/creationOfTheProject2.jpg"), description: "Creation of the model" },
+                { src: require("./assets/images/projects/SmartDogHouse/mobbdog.png"), description: "Mobile app" },
+                { src: require("./assets/images/projects/SmartDogHouse/shema-dogg.png"), description: "Arduino scheme" },
+            ]
+        },
+        screencast: "https://www.youtube.com/embed/AOIWomsvg_o?si=KeLxgOZffkpF-VJk",
+        awards: "2. place on Croatian Makers competition - Internet of Things: Kućni ljubimci i domaće životinje",
+        finished: true
+    },
     { name: "Smart Street", finished: false },
     { name: "SimonSays", finished: false },
 ];
