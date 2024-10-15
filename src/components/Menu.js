@@ -1,8 +1,12 @@
 import {projectsData} from "../ProjectsData";
+import FilterBox from "./FilterBox";
 
 export default function Menu({ selectedProject, setSelectedProject }) {
     return (
         <div id="menu">
+            <div className="filter">
+                <FilterBox />
+            </div>
             <ul>
                 {projectsData.map((project) => (
                     <li key={project.name} onClick={() => setSelectedProject(project.name)} className={selectedProject === project.name && "selected-project"}>

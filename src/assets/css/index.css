@@ -28,7 +28,22 @@ body {
   margin: 0;
   width: 100%;
   overflow: auto;
-  height: 95vh;
+  height: 88vh;
+}
+
+.filter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  padding-right: 25px;
+  height: 5vh;
+  border-bottom: 1px solid #3b4d5a;
+  width: 100%;
+}
+
+#filterIcon:hover {
+  cursor: pointer;
 }
 
 .user {
@@ -177,6 +192,14 @@ iframe {
   display: inline-block;
   margin-right: 10px;
   filter: grayscale(100%);
+}
 
-
+#modalBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99;
 }
