@@ -399,9 +399,6 @@ export const projectsData = [
         },
         finished: true
     },
-    { name: "RoomManagement", finished: false },
-    { name: "MeetingApp", finished: false },
-    { name: "Alarm", finished: false },
     {
         name: "ScuffedGeogebra",
         url: "https://geogebra.barbuddy.net",
@@ -424,9 +421,82 @@ export const projectsData = [
         },
         finished: true
     },
-    { name: "Paint", finished: false },
-    { name: "Chat", finished: false },
-    { name: "TicTacToe Online", finished: false },
+    {
+        name: "Paint",
+        url: "#",
+        urlAvailable: false,
+        description: [
+            "Simple paint made for Android mobile phone.",
+            "The user can choose the color, the size of the pen and draw on the canvas.",
+            "The user can also clear the canvas."
+        ],
+        technologiesUsed: {
+            list: [
+                "Java",
+                "Android Studio"
+            ]
+        },
+        gallery: {
+            images: [
+                { src: require("./assets/images/projects/Paint/Paint1.jpg"), description: "Empty canvas." },
+                { src: require("./assets/images/projects/Paint/Paint2.jpg"), description: "Color picker." },
+                { src: require("./assets/images/projects/Paint/Paint3.jpg"), description: "Drawing on canvas." },
+            ]
+        },
+        finished: true
+    },
+    {
+        name: "Chat",
+        url: "https://drive.google.com/file/d/1zqybuR6H90-vf7vklqiFepJC8So5H3gl/view?usp=sharing",
+        description: [
+            "Chat application made in C#.",
+            "The user can log in, send messages, and see the list of messages."
+        ],
+        technologiesUsed: {
+            list: [
+                "C#",
+                "Windows Forms",
+            ]
+        },
+        gallery: {
+            images: [
+                { src: require("./assets/images/projects/Chat/Chat.png"), description: "Chat." },
+            ]
+        },
+        finished: true
+    },
+    {
+        name: "TicTacToe Multiplayer",
+        url: "https://drive.google.com/file/d/1zl22neMVL7G5TIscDqQXnvQZGMFEJ9GE/view?usp=sharing",
+        urlAvailable: true,
+        description: [
+            "TicTacToe game made in C#",
+            "The game is multiplayer, and the players can play on the same network.",
+            "You need to start the server file first, and then connect the clients.",
+            "The server can handle two players at the same time.",
+            "Each player can place their symbol 3 times to the board, after the 3 times, they need to drag and drop one of their symbol to another location on the board.",
+            "The game ends when one of the players has 3 symbols in a row, column, or diagonal."
+        ],
+        technologiesUsed: {
+            list: [
+                "C#",
+                "Windows Forms",
+                "MySQL"
+            ]
+        },
+        gallery: {
+            images: [
+                { src: require("./assets/images/projects/TicTacToeMultiplayer/Start.png"), description: "Start screen of the game." },
+                { src: require("./assets/images/projects/TicTacToeMultiplayer/server.png"), description: "Server console." },
+                { src: require("./assets/images/projects/TicTacToeMultiplayer/gameStart.png"), description: "Screen when players choose their symbol." },
+                { src: require("./assets/images/projects/TicTacToeMultiplayer/threeMax.png"), description: "Each player can place 3 symbols to the board." },
+                { src: require("./assets/images/projects/TicTacToeMultiplayer/changing.png"), description: "After that, players must drag and drop the symbol from one location to another." },
+                { src: require("./assets/images/projects/TicTacToeMultiplayer/gameOver.png"), description: "Game over." },
+
+            ]
+        },
+        finished: true
+    },
     {
         name: "TicTacToe React",
         url: "https://tictactoe.barbuddy.net",
@@ -512,5 +582,34 @@ export const projectsData = [
         awards: "1. place on the Croatian Makers competition - Internet of Things: Pametan grad (2019.)",
         finished: true
     },
-    { name: "SimonSays", finished: false },
+    {
+        name: "SimonSays",
+        description: [
+            "Simon Says is a simple game where the player has to repeat the sequence of moves that the LED's show.",
+            "The game is made with Arduino, and the player interacts with the game by pressing the buttons.",
+            "With the app made with Blynk you can set the difficulty of the game."
+        ],
+        screencast: "https://www.youtube.com/embed/97lkxJqysiA?si=vy7v7gGZ4PQCb-Y7",
+        technologiesUsed: {
+            list: [
+                "Arduino",
+                "C++",
+                "Blynk"
+            ]
+        },
+        gallery: {
+            images: [
+                { src: require("./assets/images/projects/SimonSays/simonSays.png"), description: "Simon Says" },
+            ]
+        },
+        team: [
+            "Leo Stričak (developer)",
+            "Andrija Palašek (documetation)"
+        ],
+        finished: true
+    },
+    {
+        name: "RoomManagementSystem",
+        finished: false
+    }
 ];
