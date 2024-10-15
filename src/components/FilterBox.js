@@ -33,9 +33,9 @@ export default function FilterBox() {
                 {isOpen && (
                     <div className="dropdown">
                         <ul>
-                            <li>Option 1</li>
-                            <li>Option 2</li>
-                            <li>Option 3</li>
+                            <li>Web apps</li>
+                            <li>Mobile apps</li>
+                            <li>Arduino</li>
                         </ul>
                     </div>
                 )}

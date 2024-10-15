@@ -377,15 +377,74 @@ export const projectsData = [
         },
         finished: true
     },
-    { name: "TimeItRight", finished: false },
+    {
+        name: "TimeItRight",
+        url: "https://timeitright.barbuddy.net",
+        urlAvailable: true,
+        description: [
+            "Time it Right is a simple game where you have to stop the timer before the countdown ends.",
+            "The closer you are to the end of the countdown, the more points you get."
+        ],
+        technologiesUsed: {
+            list: [
+                "JavaScript",
+                "React.js"
+            ]
+        },
+        gallery: {
+            images: [
+                { src: require("./assets/images/projects/TimeItRight/timeitright1.png"), description: "Time it Right homepage." },
+                { src: require("./assets/images/projects/TimeItRight/timeitright2.png"), description: "Score." },
+            ]
+        },
+        finished: true
+    },
     { name: "RoomManagement", finished: false },
     { name: "MeetingApp", finished: false },
     { name: "Alarm", finished: false },
-    { name: "ScuffedGeogebra", finished: false },
+    {
+        name: "ScuffedGeogebra",
+        url: "https://geogebra.barbuddy.net",
+        urlAvailable: true,
+        description: [
+            "Scuffed Geogebra is a simple web application that allows users to create straight lines from equations.",
+            "The user can add multiple points to the graph"
+        ],
+        technologiesUsed: {
+            list: [
+                "HTML",
+                "CSS",
+                "JavaScript",
+            ]
+        },
+        gallery: {
+            images: [
+                { src: require("./assets/images/projects/ScuffedGeogebra/geogebra.png"), description: "Scuffed Geogebra." },
+            ]
+        },
+        finished: true
+    },
     { name: "Paint", finished: false },
     { name: "Chat", finished: false },
     { name: "TicTacToe Online", finished: false },
-    { name: "TicTacToe React", finished: false },
+    {
+        name: "TicTacToe React",
+        url: "https://tictactoe.barbuddy.net",
+        urlAvailable: true,
+        description: "A simple TicTacToe game made in React.js.",
+        technologiesUsed: {
+            list: [
+                "JavaScript",
+                "React.js"
+            ]
+        },
+        gallery: {
+            images: [
+                { src: require("./assets/images/projects/TicTacToeReact/tictactoe.png"), description: "TicTacToe." },
+            ]
+        },
+        finished: true
+    },
     {
         name: "Smart Dog House",
         description: [
