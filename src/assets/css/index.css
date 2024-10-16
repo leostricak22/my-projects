@@ -91,6 +91,7 @@ body {
   background-color: #ffffff;
   overflow-y: auto;
   color: #444;
+  overflow-x: hidden;
 }
 
 .content h1 {
