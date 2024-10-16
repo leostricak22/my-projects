@@ -29,7 +29,8 @@ export const projectsData = [
         },
         screencast: "https://www.youtube.com/embed/HrZacMQllf0?si=AqG86td4lHqk4JRL",
         team: ["Leo Stričak (developer)", "Zvonimir Škegro (design)", "Oliver Živčić (developer & business plan)"],
-        finished: true
+        finished: true,
+        category: "mobile"
     },
     {
         name: "SnakeGame: Zmijica",
@@ -57,7 +58,8 @@ export const projectsData = [
                 { src: require("./assets/images/projects/SnakeGame/Score.png"), description: "Snake score on game over" }
             ]
         },
-        finished: true
+        finished: true,
+        category: "web"
     },
     {
         name: "BarBuddy",
@@ -98,7 +100,8 @@ export const projectsData = [
                 { src: require("./assets/images/projects/BarBuddy/email.png"), description: "Email confirmation." },
             ]
         },
-        finished: true
+        finished: true,
+        category: "web"
     },
     {
         name: "Formulas",
@@ -135,7 +138,8 @@ export const projectsData = [
             ]
         },
         screencast: "https://www.youtube.com/embed/o2CqNJ4mSdk?si=twf5AN7ohht58w3a",
-        finished: true
+        finished: true,
+        category: "web"
     },
     {
         name: "MicroMania",
@@ -172,7 +176,8 @@ export const projectsData = [
             "Andrija Palašek (documentation)"
         ],
         screencast: "https://www.youtube.com/embed/fRz-gd85QJg?si=0f1YgWXlvPgXzMMK",
-        finished: true
+        finished: true,
+        category: "web"
     },
     {
         name: "EcoMedia",
@@ -199,7 +204,8 @@ export const projectsData = [
                 { src: require("./assets/images/projects/EcoMedia/adminRate.png"), description: "Admins feature to rate the image." },
             ]
         },
-        finished: true
+        finished: true,
+        category: "mobile"
     },
     {
         name: "MagicSquare",
@@ -226,7 +232,8 @@ export const projectsData = [
             ]
         },
 
-        finished: true
+        finished: true,
+        category: "web"
     },
     {
         name: "Plinko",
@@ -252,7 +259,8 @@ export const projectsData = [
             ]
         },
 
-        finished: true
+        finished: true,
+        category: "web"
     },
     {
         name: "ParkingGame",
@@ -271,12 +279,11 @@ export const projectsData = [
                 { src: require("./assets/images/projects/ParkingGame/parkinggame.png"), description: "Parking game" },
             ]
         },
-        finished: true
+        finished: true,
+        category: "web"
     },
     {
         name: "LeoCode",
-        url: "https://decoder.barbuddy.net/",
-        urlAvailable: true,
         description: "A custom encryptor and decryptor made in JavaScript.",
         technologiesUsed: {
             list: [
@@ -291,7 +298,8 @@ export const projectsData = [
                 { src: require("./assets/images/projects/LeoCode/leocode.png"), description: "LeoCode" },
             ]
         },
-        finished: true
+        finished: true,
+        category: "web"
     },
     {
         name: "SQLi",
@@ -312,7 +320,8 @@ export const projectsData = [
                 { src: require("./assets/images/projects/SQLi/sqli.png"), description: "SQLi" },
             ]
         },
-        finished: true
+        finished: true,
+        category: "web"
     },
     {
         name: "Resume",
@@ -330,7 +339,8 @@ export const projectsData = [
                 { src: require("./assets/images/projects/Resume/resume.png"), description: "Resume" },
             ]
         },
-        finished: true
+        finished: true,
+        category: "web"
     },
     {
         name: "Visitor",
@@ -353,7 +363,8 @@ export const projectsData = [
                 { src: require("./assets/images/projects/Visitor/visitor.png"), description: "Visitor." },
             ]
         },
-        finished: true
+        finished: true,
+        category: "web"
     },
     {
         name: "WebShop",
@@ -375,7 +386,8 @@ export const projectsData = [
                 { src: require("./assets/images/projects/WebShop/webshop.png"), description: "WebShop." },
             ]
         },
-        finished: true
+        finished: true,
+        category: "web"
     },
     {
         name: "TimeItRight",
@@ -397,7 +409,8 @@ export const projectsData = [
                 { src: require("./assets/images/projects/TimeItRight/timeitright2.png"), description: "Score." },
             ]
         },
-        finished: true
+        finished: true,
+        category: "web"
     },
     {
         name: "ScuffedGeogebra",
@@ -419,7 +432,8 @@ export const projectsData = [
                 { src: require("./assets/images/projects/ScuffedGeogebra/geogebra.png"), description: "Scuffed Geogebra." },
             ]
         },
-        finished: true
+        finished: true,
+        category: "web"
     },
     {
         name: "Paint",
@@ -443,7 +457,8 @@ export const projectsData = [
                 { src: require("./assets/images/projects/Paint/Paint3.jpg"), description: "Drawing on canvas." },
             ]
         },
-        finished: true
+        finished: true,
+        category: "mobile"
     },
     {
         name: "Chat",
@@ -463,7 +478,8 @@ export const projectsData = [
                 { src: require("./assets/images/projects/Chat/Chat.png"), description: "Chat." },
             ]
         },
-        finished: true
+        finished: true,
+        category: "desktop"
     },
     {
         name: "TicTacToe Multiplayer",
@@ -495,7 +511,8 @@ export const projectsData = [
 
             ]
         },
-        finished: true
+        finished: true,
+        category: "desktop"
     },
     {
         name: "TicTacToe React",
@@ -513,7 +530,8 @@ export const projectsData = [
                 { src: require("./assets/images/projects/TicTacToeReact/tictactoe.png"), description: "TicTacToe." },
             ]
         },
-        finished: true
+        finished: true,
+        category: "web"
     },
     {
         name: "Smart Dog House",
@@ -546,7 +564,8 @@ export const projectsData = [
         },
         screencast: "https://www.youtube.com/embed/AOIWomsvg_o?si=KeLxgOZffkpF-VJk",
         awards: "2. place on Croatian Makers competition - Internet of Things: Kućni ljubimci i domaće životinje (2018.)",
-        finished: true
+        finished: true,
+        category: "arduino"
     },
     {
         name: "Smart Street",
@@ -580,7 +599,8 @@ export const projectsData = [
         },
         screencast: "https://www.youtube.com/embed/-gM6au11Anc?si=NIyYVnWFwl8IKfoi",
         awards: "1. place on the Croatian Makers competition - Internet of Things: Pametan grad (2019.)",
-        finished: true
+        finished: true,
+        category: "arduino"
     },
     {
         name: "SimonSays",
@@ -606,10 +626,29 @@ export const projectsData = [
             "Leo Stričak (developer)",
             "Andrija Palašek (documetation)"
         ],
-        finished: true
+        finished: true,
+        category: "arduino"
+    },
+    {
+        name: "My Projects",
+        url: "https://projects.barbuddy.net",
+        urlAvailable: true,
+        description: [
+            "My Projects is a simple web application that allows users to see all of my projects.",
+            "This is the project :)"
+        ],
+        technologiesUsed: {
+            list: [
+                "JavaScript",
+                "React.js"
+            ]
+        },
+        finished: true,
+        category: "web"
     },
     {
         name: "Room Management System",
-        finished: false
+        finished: false,
+        category: "desktop"
     }
 ];

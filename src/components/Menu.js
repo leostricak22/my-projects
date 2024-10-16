@@ -1,14 +1,26 @@
 import {projectsData} from "../ProjectsData";
 import FilterBox from "./FilterBox";
+import {useEffect, useState} from "react";
 
 export default function Menu({ selectedProject, setSelectedProject }) {
+    const [filter, setFilter] = useState("all");
+    const [projects, setProjects] = useState(projectsData);
+
+    useEffect(() => {
+        const filteredProjects = projectsData.filter((project) => {
+            return filter === "all" || project.category === filter;
+        });
+        setProjects(filteredProjects);
+    }, [filter, setProjects]);
+
+
     return (
         <div id="menu">
             <div className="filter">
-                <FilterBox />
+                <FilterBox filter={filter} setFilter={setFilter} />
             </div>
             <ul>
-                {projectsData.map((project) => (
+                {projects.map((project) => (
                     <li key={project.name} onClick={() => setSelectedProject(project.name)} className={selectedProject === project.name && "selected-project"}>
                         {project.name}
                     </li>
