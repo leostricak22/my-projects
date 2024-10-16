@@ -71,3 +71,9 @@ button:hover {
     transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
 }
+
+@media screen and (max-width: 768px) {
+    .galleryImageContainer img {
+        width: 90%;
+    }
+}

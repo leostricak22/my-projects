@@ -609,7 +609,7 @@ export const projectsData = [
         finished: true
     },
     {
-        name: "RoomManagementSystem",
+        name: "Room Management System",
         finished: false
     }
 ];
