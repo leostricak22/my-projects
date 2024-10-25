@@ -4,6 +4,7 @@ import Screencast from "./projectInfoComponents/Screencast";
 import Team from "./projectInfoComponents/Team";
 import Gallery from "./projectInfoComponents/Gallery";
 import Description from "./projectInfoComponents/Description";
+import {FaGithub} from "react-icons/fa";
 
 export default function ProjectInfo({project}) {
     if (!project.finished) {
@@ -36,6 +37,14 @@ export default function ProjectInfo({project}) {
 
             {
                 project.documentation && <p>Project documentation is <a href={project.documentation}>here</a>.</p>
+            }
+
+            {
+                project.githubRepo &&
+                <div className="gitUrl">
+                    <FaGithub />
+                    <p><a href={project.githubRepo}>repository</a></p>
+                </div>
             }
 
             <FunctionalitiesAndFeatures functionalitiesAndFeatures={project.functionalitiesAndFeatures} />

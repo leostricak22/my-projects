@@ -17,6 +17,7 @@ export const projectsData = [
                 "Edit profile"
             ]
         },
+        githubRepo: "https://github.com/leostricak22/imbus",
         technologiesUsed: {
             list: [
                 "Java Spring Boot",
@@ -35,6 +36,7 @@ export const projectsData = [
     {
         name: "SnakeGame: Zmijica",
         url: "https://zmijica.barbuddy.net/",
+        githubRepo: "https://github.com/leostricak22/snake-game",
         urlAvailable: true,
         description: "Snake game is a simple game made in React.js. The goal of the game is to eat as many enemies as possible without hitting the walls or the snake's body.",
         functionalitiesAndFeatures: {
@@ -326,6 +328,7 @@ export const projectsData = [
     {
         name: "Resume",
         url: "https://resume.barbuddy.net/",
+        githubRepo: "https://github.com/leostricak22/resume",
         urlAvailable: true,
         description: "My personal resume page.",
         technologiesUsed: {
@@ -346,6 +349,7 @@ export const projectsData = [
         name: "Visitor",
         url: "https://visitor.barbuddy.net",
         urlAvailable: true,
+        githubRepo: "https://github.com/leostricak22/visitor",
         description: [
             "App build in React.js that helps you create your personal collection of places in Croatia that you would like to visit.",
             "Add places that you would like to visit by clicking on available places.",
@@ -370,6 +374,7 @@ export const projectsData = [
         name: "WebShop",
         url: "https://webshop.barbuddy.net",
         urlAvailable: true,
+        githubRepo: "https://github.com/leostricak22/webshop",
         description: [
             "WebShop is a simple web application that allows users to add products to the cart and see the total price of the products.",
             "The user can add products to the cart by clicking on the button under the product image and more quantity, or remove it in the cart.",
@@ -392,6 +397,7 @@ export const projectsData = [
     {
         name: "TimeItRight",
         url: "https://timeitright.barbuddy.net",
+        githubRepo: "https://github.com/leostricak22/time-it-right",
         urlAvailable: true,
         description: [
             "Time it Right is a simple game where you have to stop the timer before the countdown ends.",
@@ -517,6 +523,7 @@ export const projectsData = [
     {
         name: "TicTacToe React",
         url: "https://tictactoe.barbuddy.net",
+        githubRepo: "https://github.com/leostricak22/tictactoe-react",
         urlAvailable: true,
         description: "A simple TicTacToe game made in React.js.",
         technologiesUsed: {
@@ -632,6 +639,7 @@ export const projectsData = [
     {
         name: "My Projects",
         url: "https://projects.barbuddy.net",
+        githubRepo: "https://github.com/leostricak22/my-projects",
         urlAvailable: true,
         description: [
             "My Projects is a simple web application that allows users to see all of my projects.",

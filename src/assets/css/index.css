@@ -196,6 +196,7 @@ iframe {
   filter: grayscale(100%);
 }
 
+
 #modalBackground {
   position: fixed;
   top: 0;
@@ -247,6 +248,10 @@ iframe {
   .screencast {
     width: 100%;
   }
+}
 
-
+.gitUrl {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
